@@ -1,16 +1,15 @@
-
-import './App.css';
-// import Register from './Containers/Register/Register';
-
-import Login from './Containers/Login/Login';
+import { Outlet } from "react-router-dom";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Register/>
-      {/* <Login/> */}
-    </div>
-  );
+    return (
+        <div className="App">
+            
+            <div className="app-container">
+                <Outlet />
+            </div>
+        </div>
+    );
 }
 
 export default App;

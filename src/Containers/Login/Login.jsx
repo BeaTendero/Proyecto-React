@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { errorCheck } from '../../utils/validate';
 import './Login.css';
 
+
 const Login = () => {
 
     const [user, setUser] = useState({
@@ -57,6 +58,9 @@ const Login = () => {
             <div className='msgError'>{userError.emailError}</div>
             <input type='password' name='password' placeholder='password' onChange={(e) => inputHandler(e)} onBlur={(e) => errorHandler(e)} className={userError.passwordError === '' ? 'basicInput' : 'basicInput basicInputError'} />
             <div className='msgError'>{userError.passwordError}</div>
+            
+{/* <button onClick={Click}>Loging</button> */}
+
         </div>
     )
 }
