@@ -11,7 +11,7 @@ const Register = () => {
         password: '',
         password2: ''
     });
-
+///calcamos para cuanndo sea error
     const [userError, setUserError] = useState({
         emailError : '',
         phoneError : '',
@@ -48,6 +48,7 @@ const Register = () => {
 
     return (
         <div className='registerDesign'>
+            
              {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
              {/* <pre>{JSON.stringify(userError, null, 2)}</pre> */}
             <input type='email' name='email' placeholder='escribe un email' onChange={(e)=>inputHandler(e)} onBlur={(e)=>errorHandler(e)} className={userError.emailError === '' ? 'basicInput' : 'basicInput basicInputError'} />
