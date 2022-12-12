@@ -1,3 +1,4 @@
+import Button from 'react-bootstrap/Button';
 
 import React, {useState, useEffect} from 'react';
 import { errorCheck } from '../../utils/validate';
@@ -59,6 +60,9 @@ const Register = () => {
             <div className='msgError'>{userError.passwordError}</div>
             <input type='password' name='password2' placeholder='otra vez password' onChange={(e)=>inputHandler(e)} onBlur={(e)=>errorHandler(e)} className={userError.password2Error === '' ? 'basicInput' : 'basicInput basicInputError'} />
             <div className='msgError'>{userError.password2Error}</div>
+
+            <Button variant="primary">Inicia</Button>{' '}
+
         </div>
     )
 }

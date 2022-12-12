@@ -60,7 +60,7 @@ const Login = () => {
             <input type='password' name='password' placeholder='password' onChange={(e) => inputHandler(e)} onBlur={(e) => errorHandler(e)} className={userError.passwordError === '' ? 'basicInput' : 'basicInput basicInputError'} />
             <div className='msgError'>{userError.passwordError}</div>
 
-            <Button variant="primary">Primary</Button>{' '}
+            <Button variant="primary">Inicia</Button>{' '}
 
         </div>
     )
